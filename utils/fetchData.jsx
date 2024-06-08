@@ -8,7 +8,6 @@ export async function get(url, setter) {
 }
 
 export async function post(url, data, setter) {
-  console.log(data);
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -17,7 +16,6 @@ export async function post(url, data, setter) {
     body: JSON.stringify(data),
   });
   if (!response.ok) {
-    console.log(response);
     alert("Error en la petición: " + response.statusText);
     return;
   }
