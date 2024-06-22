@@ -13,7 +13,7 @@ export default function NuevaTarea({ setTareas }) {
       alert("Debe ingresar nombre y descripción");
       return;
     }
-    post("http://192.168.1.102:8000/api/tareas/", { nombre, descripcion }, setTareas);
+    post("http://url/api/tareas/", { nombre, descripcion }, setTareas);
     setNombre("");
     setDescripcion("");
   }

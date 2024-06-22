@@ -8,7 +8,7 @@ export default function AlumnosScreen({ navigation }) {
   const [alumnos, setAlumnos] = useState([]);
 
   useEffect(() => {
-    get("http://192.168.1.102:8000/api/alumnos/", setAlumnos);
+    get("http://url/api/alumnos/", setAlumnos);
   }, []);
 
   return (

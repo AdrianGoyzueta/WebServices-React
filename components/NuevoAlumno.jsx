@@ -15,7 +15,7 @@ export default function NuevoAlumno({ setAlumnos }) {
       alert("Debe ingresar todos los datos");
       return;
     }
-    post("http://192.168.1.102:8000/api/alumnos/", { codigo, materno, paterno, nombre }, setAlumnos);
+    post("http://url/api/alumnos/", { codigo, materno, paterno, nombre }, setAlumnos);
     setCodigo("");
     setMaterno("");
     setPaterno("");

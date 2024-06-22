@@ -12,7 +12,7 @@ export default function NuevoPuntaje({ tarea, setAlumnos }) {
       alert("Ingrese el código del alumno");
       return;
     }
-    post("http://192.168.1.102:8000/api/presentas/", {
+    post("http://url/api/presentas/", {
       tarea,
       codigo,
       puntos

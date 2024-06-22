@@ -7,7 +7,7 @@ export default function PresentadoScreen({ navigation }) {
   const [entregas, setEntregas] = useState([]);
 
   useEffect(() => {
-    get("http://192.168.1.102:8000/api/entregas/", setEntregas)
+    get("http://url/api/entregas/", setEntregas)
   }, [])
   
   return (
